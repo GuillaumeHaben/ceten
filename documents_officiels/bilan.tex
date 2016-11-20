@@ -1,0 +1,113 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                                     %
+%                     Bilan Moral du BDE 2016                         %
+%                                                                Beta %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%  Auteurs :
+%    Guillaume Haben <guillaume.haben@telecomnancy.net>
+%
+%  Licence :
+%    CC-BY-NC 4.0 (http://creativecommons.org/licenses/by-nc/4.0)
+%
+%%%
+
+\documentclass{article} % Jusqu'à preuve du contraire, les documents édités par
+                                              % le Ceten ne font pas 300 pages.
+\usepackage[a4paper,includeheadfoot,margin=2.54cm]{geometry}
+\usepackage[francais]{babel}
+
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{titlesec}
+\usepackage{ifxetex}
+\usepackage[usenames]{xcolor}
+\definecolor{newCeten}{RGB}{130,11,95}
+\usepackage{multicol}
+\usepackage{xr}
+\externaldocument[S.]{statuts}
+\widowpenalties 1 10000
+\raggedbottom
+
+\usepackage{fontspec}
+\setmainfont{Roboto Slab}
+\setsansfont{Roboto}
+\setmonofont{Roboto Mono}
+\newfontfamily\condensed{Roboto Condensed}
+\newfontfamily\condensedlight{Roboto Condensed Light}
+\newfontfamily\light{Roboto Slab Light}
+\titleformat*{\section}{\LARGE\condensed\color{newCeten}}
+\titleformat*{\subsection}{\Large\condensedlight\color{newCeten}}
+\titleformat*{\subsubsection}{\large\condensedlight\color{newCeten}}
+
+\title{Bilan moral 2016}
+\author{Guillaume Haben}
+\date\today
+
+%%%%%%%%%%%%%%
+%  Document  %
+%%%%%%%%%%%%%%
+
+\begin{document}
+
+	\pagenumbering{roman}
+
+	%---------------%
+	% Page de garde %
+	%---------------%
+
+	\begin{titlepage}
+		\begin{center}
+			\includegraphics[width=\textwidth]{images/ceten.png}\par
+			\vspace{3cm}
+			{\Huge \light Bilan Moral}\par
+			\vspace{0.5cm}
+			{\large \light Année 2016}\par
+			\vfill
+			{\large Cercle des Élèves de TELECOM Nancy}\par
+			{\large \light Association déclarée}
+			\vfill
+			{\light \today}\par
+		\end{center}
+	\end{titlepage}
+
+	%--------------------%
+	% Table des matières %
+	%--------------------%
+
+	\tableofcontents
+
+	%-----------%
+	% Préambule %
+	%-----------%
+
+	%\vfill
+	%\begin{center}
+		%{\light Ce règlement intérieur a pour objectif de préciser les %statuts
+		%de l’association Cercle des Élèves de TELECOM Nancy dont l’objet %est
+		%d’aider les élèves adhérents, anciens comme nouveaux, de TELECOM %Nancy.
+		%Il est mis à la disposition de l’ensemble des membres et de tout %nouvel
+	%	adhérent.}
+	%\end{center}
+	%\vfill
+
+	\clearpage
+
+	%----------%
+	% Articles %
+	%----------%
+
+	\pagenumbering{arabic}
+
+	\section{Remerciements}
+	\section{Général}
+	\section{Secrétariat}
+	\section{Pôle clubs}
+	\section{Pôle logistique}
+	\section{Pôle informatique}
+	\section{Pôle partenariat}
+	\section{Pôle communication}
+	\section{Évènements}
+	\section{Divers}
+
+\end{document}
